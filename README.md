@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Local Development Env
 
-Things you may want to cover:
+Requirements:
 
-* Ruby version
+```
+ruby
+sqlite3
+node
+yarn
+```
 
-* System dependencies
+## Setting up code complete with VS code and solargraph
 
-* Configuration
+```
+bundle install
+bundle exec yard gems
+```
 
-* Database creation
+```
+Install solargraph extension on VScode
+In VScode "Code" > "Perferences" > "Settings" > "Extensions" > "Solargraph Settings"
+    Check off "Use Bundler"
+```
 
-* Database initialization
+## Start Server
 
-* How to run the test suite
+Create `.env` file at root of project with the following variables, see `.env_example`
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+export SPOTIFY_CLIENT_ID=foo_bar
+export SPOTIFY_CLIENT_SECRET=123123123
+```
 
-* Deployment instructions
+Start server
 
-* ...
+```
+bundle install
+source .env && bundle exec rails server
+```

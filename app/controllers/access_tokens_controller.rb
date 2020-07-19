@@ -7,8 +7,8 @@ class AccessTokensController < ApplicationController
         grant_type: 'authorization_code',
         code: params[:code],
         redirect_uri: 'http://localhost:3000/access_tokens',
-        client_id: 'a2f62fa1d6764016a0e2ef1f8d6f0428',
-        client_secret: 'client_secret'})
+        client_id: Rails.application.config.spotify_client_id,
+        client_secret: Rails.application.config.spotify_client_secret})
 
         #making GET request for user information using access token
         user_info = HTTParty.get('https://api.spotify.com/v1/me', headers:{
