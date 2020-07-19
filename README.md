@@ -39,3 +39,9 @@ Start server
 bundle install
 source .env && bundle exec rails server
 ```
+
+Navigate to
+
+```
+http://localhost:3000/
+```
