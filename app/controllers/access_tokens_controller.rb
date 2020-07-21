@@ -45,7 +45,7 @@ class AccessTokensController < ApplicationController
         # options = {'credentials' => new_hash}
         # options.merge!(user_hash)
             
-        # puts options
+       
 
         #saving user info to database
         #rememember to perform migration, add columns for user#@user = User.new(user_hash)
