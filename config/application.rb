@@ -18,5 +18,7 @@ module SongProject
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.spotify_client_id = ENV['SPOTIFY_CLIENT_ID']
+    config.spotify_client_secret = ENV['SPOTIFY_CLIENT_SECRET']
   end
 end
