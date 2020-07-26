@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_16_194632) do
+ActiveRecord::Schema.define(version: 2020_07_26_215937) do
+
+  create_table "invitations", force: :cascade do |t|
+    t.integer "calendar_id", null: false
+    t.integer "user_id", null: false
+    t.string "invitation_token"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["calendar_id"], name: "index_invitations_on_calendar_id"
+    t.index ["user_id"], name: "index_invitations_on_user_id"
+  end
 
   create_table "tokens", force: :cascade do |t|
     t.string "access_token", null: false
@@ -32,4 +42,6 @@ ActiveRecord::Schema.define(version: 2020_07_16_194632) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "invitations", "calendars"
+  add_foreign_key "invitations", "users"
 end
