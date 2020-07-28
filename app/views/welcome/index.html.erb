@@ -18,8 +18,8 @@
 
     <div class="container">
       <div id="login">
-        <h1>This is an example of the Authorization Code flow</h1>
-        <a href="https://accounts.spotify.com/authorize?client_id=a2f62fa1d6764016a0e2ef1f8d6f0428&response_type=code&redirect_uri=http://localhost:3000/access_tokens&scope=user-read-private%20user-read-email" class="btn btn-primary">Log in with Spotify</a>
+        <h1>Welcome to the Collaborative Song Calendar</h1>
+        <a href="https://accounts.spotify.com/authorize?client_id=a2f62fa1d6764016a0e2ef1f8d6f0428&response_type=code&redirect_uri=http://localhost:3000/access_tokens&scope=user-read-private%20user-read-email%20playlist-modify-public%20playlist-modify-private" class="btn btn-primary">Log in with Spotify</a>
       </div>
       <div id="loggedin">
         <div id="user-profile">
@@ -29,6 +29,8 @@
         <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
       </div>
     </div>
+
+  <img src ="https://i.pinimg.com/originals/71/df/8b/71df8b3256183f0520520ad7d2d9bc6f.jpg" alt="We apologize. Please excuse our appearance while we renovate." width="50%" height="50%">
 
     <script id="user-profile-template" type="text/x-handlebars-template">
       <h1>Logged in as {{display_name}}</h1>

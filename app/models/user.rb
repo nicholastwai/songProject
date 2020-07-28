@@ -1,5 +1,7 @@
 class User < ApplicationRecord
     has_one :token
+    has_many :memberships
+    has_many :calendars, through: :memberships
 
     def rspotify
         RSpotify::User.new({
