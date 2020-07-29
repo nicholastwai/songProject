@@ -7,11 +7,16 @@ class CalendarsController < ApplicationController
     end
 
     def create 
-        @calendar = Calendar.new(params[:calendar])
+        @calendar = Calendar.new(calendars_param)
         if @calendar.save
-            redirect_to index_user_path
+            redirect_to index_users_path
         else 
             redirect_to new_calendar_path
         end
     end
+
+    private
+        def calendar_params
+            params.require(:calendar).permit(:name)
+        end
 end
