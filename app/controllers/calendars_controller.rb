@@ -1,5 +1,6 @@
 class CalendarsController < ApplicationController
     def show
+        @calendar = Calendar.find(params[:id])
     end
 
     def new
@@ -7,11 +8,11 @@ class CalendarsController < ApplicationController
     end
 
     def create 
-        @calendar = Calendar.new(calendars_param)
+        @calendar = Calendar.new(calendar_params)
         if @calendar.save
-            redirect_to index_users_path
+            redirect_to users_index_path
         else 
-            redirect_to new_calendar_path
+            redirect_to new_calendar_path, flash.alert = "Naming failed, try again." 
         end
     end
 

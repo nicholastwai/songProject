@@ -1,2 +1,2 @@
-module CalendarHelper
+module CalendarsHelper
 end

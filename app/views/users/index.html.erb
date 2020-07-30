@@ -1,3 +1,11 @@
 <table>
-    <%= link_to "Create New Calendar", new_calendar_path%>
+    <h1>Calendars</h1>
+    <% @calendars.each do |calendar|%>
+    <tr>
+        <td><%=link_to calendar.name, calendar_path(calendar)%></td>
+        <%end%>
+    </tr>
 </table>
+
+<br>
+    <%= link_to "Create New Calendar", new_calendar_path%>
