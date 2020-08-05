@@ -10,11 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_16_194632) do
+ActiveRecord::Schema.define(version: 2020_07_27_214244) do
+
+  create_table "calendar_days", force: :cascade do |t|
+    t.string "calendar_id"
+    t.string "calendar_theme"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "calendars", force: :cascade do |t|
+    t.string "rails"
+    t.string "generate"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
+  end
+
+  create_table "memberships", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "song_entries", force: :cascade do |t|
+    t.string "song_name"
+    t.string "song_entry_author"
+    t.string "note"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "tokens", force: :cascade do |t|
-    t.string "access_token", null: false
-    t.string "refresh_token", null: false
+    t.string "access_token"
+    t.string "refresh_token"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "token_type"
@@ -22,6 +50,13 @@ ActiveRecord::Schema.define(version: 2020_07_16_194632) do
     t.string "scope"
     t.integer "user_id"
     t.index ["user_id"], name: "index_tokens_on_user_id"
+  end
+
+  create_table "user_calendars", force: :cascade do |t|
+    t.string "user_id"
+    t.string "calendar_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
