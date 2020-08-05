@@ -1,0 +1,130 @@
+<html>
+  <div class="center">
+    <h1><%=@calendar.name%></h1>
+  </div>
+  <main>
+    <div class="date-grid">
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Your go-to karaoke song", calendar_id: @calendar.id)%></p>
+        <p> 1 <%=link_to "Your go-to karaoke song", calendar_day_path(calendar_day)%> </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "The first song you ever purchased", calendar_id: @calendar.id)%></p>
+        <p> 2 <%=link_to "The first song you ever purchased", calendar_day_path(calendar_day)%></p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song that reminds you of someone special", calendar_id: @calendar.id)%></p>
+        <p> 3 <%=link_to "Song that reminds you of someone special", calendar_day_path(calendar_day)%></p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song you can't help but dance to", calendar_id: @calendar.id)%></p>
+        <p> 4 <%=link_to "Song you can't help but dance to", calendar_day_path(calendar_day)%></p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song by your favorite female artist", calendar_id: @calendar.id)%></p>
+        <p> 5 <%=link_to "Song by your favorite female artist", calendar_day_path(calendar_day)%> </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Favorite Song from the 80's", calendar_id: @calendar.id)%></p>
+        <p> 6 <%=link_to "Favorite Song from the 80's", calendar_day_path(calendar_day)%> </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song from a Movie", calendar_id: @calendar.id)%></p>
+        <p> 7 <%=link_to "Song from a Movie", calendar_day_path(calendar_day)%> </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Favorite Cover Song by Another Artist", calendar_id: @calendar.id)%></p>
+        <p> 8 <%=link_to "Favorite Cover Song by Another Artist", calendar_day_path(calendar_day)%> </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Songs that Remind You of Summer", calendar_id: @calendar.id)%></p>
+        <p> 9 <%=link_to "Songs that Remind You of Summer", calendar_day_path(calendar_day)%> </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song you Know Every Word to", calendar_id: @calendar.id)%></p>
+        <p> 10<%=link_to "Song you Know Every Word to", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song with a Color in the Title", calendar_id: @calendar.id)%></p>
+        <p> 11<%=link_to "Song with a Color in the Title", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song that Reminds you of Being a Teenager", calendar_id: @calendar.id)%></p>
+        <p> 12<%=link_to "Song that Reminds you of Being a Teenager", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Favorite Power Ballad", calendar_id: @calendar.id)%></p>
+        <p> 13<%=link_to "Favorite Power Ballad", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song by your favorite male artist", calendar_id: @calendar.id)%></p>
+        <p> 14<%=link_to "Song by your favorite male artist", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song by a Band You Wish Were Still Together", calendar_id: @calendar.id)%></p>
+        <p> 15<%=link_to "Song by a Band You Wish Were Still Together", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song that Makes You Feel Motivated", calendar_id: @calendar.id)%></p>
+        <p> 16<%=link_to "Song that Makes You Feel Motivated", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Favorite Song from a Musical", calendar_id: @calendar.id)%></p>
+        <p> 17<%=link_to "Favorite Song from a Musical", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Your Newest Favorite Song", calendar_id: @calendar.id)%></p>
+        <p> 18<%=link_to "Your Newest Favorite Song", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song that Makes You Feel All the Feels", calendar_id: @calendar.id)%></p>
+        <p> 19<%=link_to "Song that Makes You Feel All the Feels", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "The Ultimate Road Trip Song", calendar_id: @calendar.id)%></p>
+        <p> 20<%=link_to "The Ultimate Road Trip Song", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song that Reminds you of a School Dance", calendar_id: @calendar.id)%></p>
+        <p> 21<%=link_to "Song that Reminds you of a School Dance", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song that Instantly Makes you Happy", calendar_id: @calendar.id)%></p>
+        <p> 22<%=link_to "Song that Instantly Makes you Happy", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Favorite Song with a Name in the Title", calendar_id: @calendar.id)%></p>
+        <p> 23<%=link_to "Favorite Song with a Name in the Title", calendar_day_path(calendar_day)%>  <p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Favorite Song from the 90's", calendar_id: @calendar.id)%></p>
+        <p> 24<%=link_to "Favorite Song from the 90's", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song Your Parents Always Played", calendar_id: @calendar.id)%></p>
+        <p> 25<%=link_to "Song Your Parents Always Played", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song that Makes You Feel Relaxed", calendar_id: @calendar.id)%></p>
+        <p> 26<%=link_to "Song that Makes You Feel Relaxed", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Favorite Duet/Remix", calendar_id: @calendar.id)%></p>
+        <p> 27<%=link_to "Favorite Duet/Remix", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Your Most Played Song So Far this Year", calendar_id: @calendar.id)%></p>
+        <p> 28<%=link_to "Your Most Played Song So Far this Year", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Song You Never Get Bored Of", calendar_id: @calendar.id)%></p>
+        <p> 29<%=link_to "Song You Never Get Bored Of", calendar_day_path(calendar_day)%>  </p>
+      </button>
+      <button class="test">
+        <p hidden><%= calendar_day = @calendar_days.find_by(day_theme: "Your Guilty Pleasure Song", calendar_id: @calendar.id)%></p>
+        <p> 30<%=link_to "Your Guilty Pleasure Song", calendar_day_path(calendar_day)%>  </p>
+      </button>
+    </div>
+  </main>
+</html>
+<%=link_to "Back", users_index_path%>

@@ -37,7 +37,7 @@ class AccessTokensController < ApplicationController
             existing_user = user
         end
             
-        redirect_to 'http://localhost:3000/user/index'
+        redirect_to 'http://localhost:3000/users/index'
 
     end
 end
