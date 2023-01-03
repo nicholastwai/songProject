@@ -90,7 +90,8 @@ GEM
     hashie (4.1.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    httparty (0.15.7)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
@@ -276,7 +277,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
-  httparty (~> 0.15.6)
+  httparty (~> 0.21.0)
   jbuilder (~> 2.7)
   pry
   puma (~> 4.1)
