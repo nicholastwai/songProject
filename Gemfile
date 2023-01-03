@@ -5,7 +5,7 @@ ruby '2.7.1'
 
 gem 'rspotify',  '~> 2.9' 
 
-gem 'httparty', '~> 0.15.6'
+gem 'httparty', '~> 0.21.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use sqlite3 as the database for Active Record
