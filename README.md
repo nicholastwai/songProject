@@ -1,7 +1,8 @@
-# README
+# The Collaborative Song Calendar
+## This web app connects to the Spotify API to allow friends to create collaborative playlists in accordance with daily themes, as seen below.
+![image](https://user-images.githubusercontent.com/57726227/218602555-eabf3166-aa17-4c7b-9773-ff3d87c8c852.png)
 
-## Local Development Env
-
+### Local Development Env
 Requirements:
 
 ```
@@ -11,7 +12,7 @@ node
 yarn
 ```
 
-## Setting up code complete with VS code and solargraph
+### Setting up code complete with VS code and solargraph
 
 ```
 bundle install
@@ -24,7 +25,7 @@ In VScode "Code" > "Perferences" > "Settings" > "Extensions" > "Solargraph Setti
     Check off "Use Bundler"
 ```
 
-## Start Server
+### Start Server
 
 Create `.env` file at root of project with the following variables, see `.env_example`
 
